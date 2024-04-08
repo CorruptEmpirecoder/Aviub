@@ -27,8 +27,8 @@ alivemodules = CMD_HELP
 alive_logo = (
     gvarstatus("ALIVE_LOGO") or ""
 )
-emoji = gvarstatus("ALIVE_EMOJI") or "✧"
-alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "✧✧ 𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄-𝐗-𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 ✧✧"
+emoji = gvarstatus("ALIVE_EMOJI") or "𖣔"
+alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "۞ 𝗔𝘃𝗶 𝗜𝘀 𝗢𝗻𝗹𝗶𝗻𝗲 ۞"
 
 
 @Client.on_message(filters.command(["alive", "awake"], cmd) & filters.me)
@@ -40,14 +40,14 @@ async def alip(client: Client, message: Message):
     man = (
         f"<b>{alive_text}</b>\n\n"
         f"<b>•─╼⃝𖠁 𝚂𝚈𝚂𝚃𝙴𝙼 𝚂𝚃𝙰𝚃𝚄𝚂 </b>\n\n"
-        f"{emoji} <b>𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁:</b> [{client.me.mention}](tg://user?id={OWNER_ID}) \n\n"
-        f"{emoji} <b>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{versipyro}</code>\n"
-        f"{emoji} <b>𝙱𝙾𝚃 𝚄𝙿𝚃𝙸𝙼𝙴:</b> <code>{uptime}</code> \n"
+        f"{emoji} <b>𝙼𝙰𝚂𝚃𝙴𝚁:</b> [{client.me.mention}](tg://user?id={OWNER_ID}) \n\n"
+        f"{emoji} <b>𝙼𝙰𝙲𝙷𝙸𝙽𝙴 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{versipyro}</code>\n"
+        f"{emoji} <b>𝚄𝙿𝚃𝙸𝙼𝙴:</b> <code>{uptime}</code> \n"
         f"{emoji} <b>𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{BOT_VER}</code> \n"
         f"{emoji} <b>𝙼𝙾𝚃𝙴𝚁𝚂:</b> <code>{len(modules)} Modules</code> \n"
         f"{emoji} <b>𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{python_version()}</code> \n"
-        f"{emoji}✧[𝙶𝚁𝙾𝚄𝙿](https://t.me/Japanese_Userbot_Support)** \n" 
-        f"{emoji}✧[𝙲𝙷𝙰𝙽𝙽𝙴𝙻](https://t.me/Japanese_Userbot)** \n"
+        f"{emoji}✧[𝚃𝙷𝙴 𝚁𝙾𝙾𝙼 𝙾𝙵 𝚂𝙴𝙲𝚁𝙴𝚃](https://t.me/TheRoomOfSecret)** \n" 
+        f"{emoji}✧[𝚃𝙷𝙴 𝚁𝙾𝙾𝙼 𝙾𝙵 𝚂𝙴𝙲𝚁𝙴𝚃](https://t.me/TheRoomOfSecret)** \n"
         
     )
     try:

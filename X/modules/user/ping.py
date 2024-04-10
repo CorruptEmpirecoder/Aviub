@@ -114,7 +114,7 @@ async def pink(client: Client, message: Message):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await X.edit(
-        f"**❏𝐀𝐯𝐢 𝐈𝐬 𝐎𝐧𝐥𝐢𝐧𝐞**\n"
+        f"**❏𝐁𝐢𝐥𝐥𝐢 𝐈𝐬 𝐎𝐧𝐥𝐢𝐧𝐞**\n"
         f"**├• PING   :** "
         f"`%sms` \n"
         f"**├•  Uptime  :** "

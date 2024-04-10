@@ -10,12 +10,12 @@ from config import OWNER_ID as owner
 @app.on_callback_query()
 def pmowner(client, callback_query):
     user_id = owner
-    message = "A Pᴏᴡᴇʀғᴜʟ Assɪᴛᴀɴᴛ 𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄 𝐗 𝐔𝐒𝐄𝐑𝐁𝐎𝐓!!!!"
+    message = "A Pᴏᴡᴇʀғᴜʟ Assɪᴛᴀɴᴛ!!!!"
     client.send_message(user_id, message)
     client.answer_callback_query(callback_query.id, text="Message sent")
 
 logoX = [
-    "https://graph.org/file/83978974fe5be2da118d7.jpg"
+    "https://graph.org/file/1f1eaedadfe813d3ae0f5.jpg"
 ]
 
 alive_logo = random.choice(logoX)

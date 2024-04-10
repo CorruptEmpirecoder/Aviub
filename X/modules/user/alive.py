@@ -28,12 +28,12 @@ alive_logo = (
     gvarstatus("ALIVE_LOGO") or ""
 )
 emoji = gvarstatus("ALIVE_EMOJI") or "𖣔"
-alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "۞ 𝗔𝘃𝗶 𝗜𝘀 𝗢𝗻𝗹𝗶𝗻𝗲 ۞"
+alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "۞ 𝐁𝐢𝐥𝐥𝐢 𝐔𝐬𝐞𝐫𝐁𝐨𝐭 𝐈𝐬 𝐀𝐥𝐢𝐯𝐞۞"
 
 
 @Client.on_message(filters.command(["alive", "awake"], cmd) & filters.me)
 async def alip(client: Client, message: Message):
-    X = await edit_or_reply(message, "❤️")
+    X = await edit_or_reply(message, "🐈")
     await asyncio.sleep(2)
     sad = client.send_video if alive_logo.endswith(".mp4") else client.send_photo
     uptime = await get_readable_time((time.time() - StartTime))
@@ -41,13 +41,13 @@ async def alip(client: Client, message: Message):
         f"<b>{alive_text}</b>\n\n"
         f"<b>•─╼⃝𖠁 𝚂𝚈𝚂𝚃𝙴𝙼 𝚂𝚃𝙰𝚃𝚄𝚂 </b>\n\n"
         f"{emoji} <b>𝙼𝙰𝚂𝚃𝙴𝚁:</b> [{client.me.mention}](tg://user?id={OWNER_ID}) \n\n"
-        f"{emoji} <b>𝙼𝙰𝙲𝙷𝙸𝙽𝙴 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{versipyro}</code>\n"
-        f"{emoji} <b>𝚄𝙿𝚃𝙸𝙼𝙴:</b> <code>{uptime}</code> \n"
-        f"{emoji} <b>𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{BOT_VER}</code> \n"
-        f"{emoji} <b>𝙼𝙾𝚃𝙴𝚁𝚂:</b> <code>{len(modules)} Modules</code> \n"
-        f"{emoji} <b>𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{python_version()}</code> \n"
+        f"{emoji} <b>𝙱𝙸𝙻𝙻𝙸 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{versipyro}</code>\n"
+        f"{emoji} <b>𝙱𝙸𝙻𝙻𝙸 𝚄𝙿𝚃𝙸𝙼𝙴:</b> <code>{uptime}</code> \n"
+        f"{emoji} <b>𝙱𝙸𝙻𝙻𝙸 𝙱 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{BOT_VER}</code> \n"
+        f"{emoji} <b>𝙱𝙸𝙻𝙻𝙸 𝙼𝙾𝚃𝙴𝚁𝚂:</b> <code>{len(modules)} Modules</code> \n"
+        f"{emoji} <b>𝙱𝙸𝙻𝙻𝙸 𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽:</b> <code>{python_version()}</code> \n"
         f"{emoji}✧[𝚃𝙷𝙴 𝚁𝙾𝙾𝙼 𝙾𝙵 𝚂𝙴𝙲𝚁𝙴𝚃](https://t.me/TheRoomOfSecret)** \n" 
-        f"{emoji}✧[𝚃𝙷𝙴 𝚁𝙾𝙾𝙼 𝙾𝙵 𝚂𝙴𝙲𝚁𝙴𝚃](https://t.me/TheRoomOfSecret)** \n"
+        f"{emoji}✧[𝙱𝙻𝙾𝙾𝙳 𝙰𝚅𝙸](https://t.me/bloodavi)** \n"
         
     )
     try:
